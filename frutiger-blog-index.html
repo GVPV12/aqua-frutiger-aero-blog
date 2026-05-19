@@ -1,0 +1,461 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Aqua Blog</title>
+<link rel="stylesheet" href="frutiger-blog-style.css">
+</head>
+<body>
+
+<!-- Bubbles -->
+<div class="bubble" style="width:20px;height:20px;left:4%;animation-duration:14s;animation-delay:0s;"></div>
+<div class="bubble" style="width:12px;height:12px;left:18%;animation-duration:10s;animation-delay:3s;"></div>
+<div class="bubble" style="width:28px;height:28px;left:78%;animation-duration:17s;animation-delay:1s;"></div>
+<div class="bubble" style="width:9px;height:9px;left:88%;animation-duration:9s;animation-delay:5s;"></div>
+<div class="bubble" style="width:16px;height:16px;left:55%;animation-duration:12s;animation-delay:7s;"></div>
+<div class="leaf" style="left:8%;animation-duration:18s;animation-delay:0s;">🍃</div>
+<div class="leaf" style="left:85%;animation-duration:22s;animation-delay:6s;">🌿</div>
+
+<div class="site">
+
+  <!-- ====== HEADER ====== -->
+  <header>
+    <div class="hdr-titlebar">
+      <div class="hdr-tb-dots">
+        <div class="hdr-dot r"></div>
+        <div class="hdr-dot y"></div>
+        <div class="hdr-dot g"></div>
+      </div>
+      <div class="hdr-tb-title">AQUA BLOG my little corner</div>
+      <div class="hdr-tb-url">https://yourname.org</div><!-- ★ change -->
+    </div>
+
+    <div class="hdr-main">
+      <!-- ★ Mascot — change src, emoji is fallback -->
+      <div class="hdr-mascot">
+        <img class="icon-img" src="delfin (1).png" alt="mascot"
+             onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+        <span class="icon-fallback">🌊</span>
+      </div>
+      <div class="hdr-text">
+        <div class="site-name">aqua <span>blog</span> ✦</div><!-- ★ change -->
+        <div class="site-desc">
+          welcome! i'm a digital artist living in a world of blue skies and bubble sounds~<br>
+          this is where i post my art, thoughts, and obsessions. stay a while ♡
+        </div><!-- ★ change -->
+        <div class="hdr-badges">
+          <span class="aero-badge ab-blue">🌐 artist</span>
+          <span class="aero-badge ab-aqua">💧 y2k lover</span>
+          <span class="aero-badge ab-green">🌿 gamer</span>
+          <span class="aero-badge ab-sky">☁️ dreamer</span>
+          <span class="aero-badge ab-teal">🐟 aquatic</span>
+        </div><!-- ★ change badges -->
+      </div>
+    </div>
+
+    <nav>
+      <a href="#" class="nav-tab active" data-tab="blog"  onclick="switchTab('blog',this);  return false;">🏠 home</a>
+      <a href="#" class="nav-tab"        data-tab="about" onclick="switchTab('about',this); return false;">👤 about</a>
+      <a href="#" class="nav-tab"        data-tab="art"   onclick="switchTab('art',this);   return false;">🎨 art</a>
+      <a href="#" class="nav-tab"        data-tab="diary" onclick="switchTab('diary',this); return false;">📝 diary</a>
+      <a href="#" class="nav-tab"        data-tab="music" onclick="switchTab('music',this); return false;">🎵 music</a>
+      <a href="#" class="nav-tab"        data-tab="links" onclick="switchTab('links',this); return false;">🔗 links</a>
+    </nav>
+  </header>
+
+  <div class="breadcrumb">
+    <div class="bc-globe"></div>
+    <a href="#">Home</a> ▸
+    <span id="breadcrumb-current" style="color:var(--text-dark);font-weight:bold;">Latest Posts</span>
+  </div>
+
+  <!-- ====== BODY ====== -->
+  <div class="body-wrap">
+    <div class="main-col">
+
+      <!-- ══ TAB: BLOG ══ -->
+      <div class="tab-pane active" id="tab-blog">
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon aqua"></div>
+            <span class="gh-title">📝 Blog Post</span>
+            <span class="gh-count">June 14, 2025</span>
+          </div>
+          <div class="post-inner">
+            <div class="post-meta">
+              <span class="post-date">2025.06.14</span>
+              <span class="post-tag pt-art">✿ ART</span>
+            </div>
+            <!-- ★ Change src to your post image -->
+            <div class="post-thumb thumb-1">
+              <img class="icon-img" src="main.jpg" alt="post"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🎨</span>
+            </div>
+            <div class="post-title"><a href="#">my new oc is finally done!! ☁️ introducing luna starlight</a></div>
+            <div class="post-excerpt">three weeks of work and she's finally here! luna is a magical girl who bends starlight and lives between two worlds — the digital aether and the waking dream.</div>
+            <div class="post-footer">
+              <a href="#" class="aero-btn btn-blue">read more ▶</a>
+              <div class="post-stats"><span class="stat-bubble"></span> 94 likes · ★ 18</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon green"></div>
+            <span class="gh-title">📝 Blog Post</span>
+            <span class="gh-count">June 10, 2025</span>
+          </div>
+          <div class="post-inner">
+            <div class="post-meta">
+              <span class="post-date">2025.06.10</span>
+              <span class="post-tag pt-game">🎮 GAMING</span>
+            </div>
+            <div class="post-thumb thumb-2">
+              <img class="icon-img" src="frutiger2.jpg" alt="post"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🎮</span>
+            </div>
+            <div class="post-title"><a href="#">starting my .hack// g.u. playthrough — first impressions!</a></div>
+            <div class="post-excerpt">okay so i finally caved and started .hack// g.u. after everyone recommended it and oh my god. the aesthetic alone is sending me.</div>
+            <div class="post-footer">
+              <a href="#" class="aero-btn btn-green">read more ▶</a>
+              <div class="post-stats"><span class="stat-bubble"></span> 61 likes · ★ 9</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon blue"></div>
+            <span class="gh-title">📝 Blog Post</span>
+            <span class="gh-count">June 5, 2025</span>
+          </div>
+          <div class="post-inner">
+            <div class="post-meta">
+              <span class="post-date">2025.06.05</span>
+              <span class="post-tag pt-life">🌸 DIARY</span>
+            </div>
+            <div class="post-thumb thumb-3">
+              <img class="icon-img" src="frutiger.jpg" alt="post"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🌊</span>
+            </div>
+            <div class="post-title"><a href="#">june goals, summer playlist & why frutiger aero lives rent free in my head</a></div>
+            <div class="post-excerpt">hi everyone!! june is somehow already here and i have Feelings™ about it. summer playlist, goals list, and a mini essay on why frutiger aero still feels like home.</div>
+            <div class="post-footer">
+              <a href="#" class="aero-btn btn-aqua">read more ▶</a>
+              <div class="post-stats"><span class="stat-bubble"></span> 117 likes · ★ 24</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon blue"></div>
+            <span class="gh-title">📝 Blog Post</span>
+            <span class="gh-count">June 5, 2025</span>
+          </div>
+          <div class="post-inner">
+            <div class="post-meta">
+              <span class="post-date">2025.06.05</span>
+              <span class="post-tag pt-life">🌸 DIARY</span>
+            </div>
+            <div class="post-thumb thumb-3">
+              <img class="icon-img" src="cutegif.gif" alt="post"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🌊</span>
+            </div>
+            <div class="post-title"><a href="#">june goals, summer playlist & why frutiger aero lives rent free in my head</a></div>
+            <div class="post-excerpt">hi everyone!! june is somehow already here and i have Feelings™ about it. summer playlist, goals list, and a mini essay on why frutiger aero still feels like home.</div>
+            <div class="post-footer">
+              <a href="#" class="aero-btn btn-aqua">read more ▶</a>
+              <div class="post-stats"><span class="stat-bubble"></span> 117 likes · ★ 24</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="glass">
+          <div class="pagination">
+            <a href="#" class="page-btn">◀</a>
+            <a href="#" class="page-btn active">1</a>
+            <a href="#" class="page-btn">2</a>
+            <a href="#" class="page-btn">3</a>
+            <a href="#" class="page-btn">▶</a>
+          </div>
+        </div>
+
+      </div><!-- end tab-blog -->
+
+      <!-- ══ TAB: ABOUT ══ -->
+      <div class="tab-pane" id="tab-about">
+        <div class="glass">
+          <div class="glass-header">
+            <div class="gh-icon aqua"></div>
+            <span class="gh-title">👤 about me</span>
+          </div>
+          <div class="post-inner">
+            <!-- ★ Change src to your about banner -->
+            <div class="about-hero">
+              <img class="icon-img" src="cutegif.gif"about"
+                   onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🌿</span>
+            </div>
+            <!-- ★ Change text -->
+            <div class="about-text">
+              hi!! i'm a digital artist living in a world of soft gradients and bubble sounds.
+              i love Y2K aesthetics, early internet culture, and anything that glows.
+              this site is my little space to share what i make and love 💙
+            </div>
+            <ul class="about-facts">
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#90d8ff,#2890e0)"></div>🎮 playing: .hack// g.u.</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#90f0e0,#28b098)"></div>📚 reading: Vampire Knight</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#a0f060,#38a810)"></div>🎵 obsessed with: eurobeat</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#ffc8e8,#e068b8)"></div>☁️ mood: soft & glowy</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#ffe090,#d8b020)"></div>🌐 pronouns: she/her</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ TAB: ART ══ -->
+      <div class="tab-pane" id="tab-art">
+        <div class="glass">
+          <div class="glass-header">
+            <div class="gh-icon pink"></div>
+            <span class="gh-title">🎨 art gallery</span>
+            <span class="gh-count">click to view full size</span>
+          </div>
+          <div class="post-inner">
+            <!-- ★ Change src on each slot (6 total) -->
+            <div class="art-grid">
+              <div class="art-item"><img class="icon-img" src="beach.gif" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🎨</span></div>
+              <div class="art-item"><img class="icon-img" src="icon.jpg" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🌸</span></div>
+              <div class="art-item"><img class="icon-img" src="gallery.gif" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">⭐</span></div>
+              <div class="art-item"><img class="icon-img" src="mountain.jpg" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🌊</span></div>
+              <div class="art-item"><img class="icon-img" src="frutiger.jpg" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🌿</span></div>
+              <div class="art-item"><img class="icon-img" src="frutiger2.jpg" alt="art" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">💫</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ TAB: DIARY ══ -->
+      <div class="tab-pane" id="tab-diary">
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon blue"></div>
+            <span class="gh-title">🌸 Diary Entry</span>
+            <span class="gh-count">June 12, 2025</span>
+          </div>
+          <div class="diary-post">
+            <div class="diary-date"><span class="post-date">2025.06.12</span><span class="post-tag pt-life">🌸 DIARY</span></div>
+            <div class="diary-title"><a href="#">a rainy afternoon and some thoughts</a></div>
+            <div class="diary-thumb dt-pink">
+              <img class="icon-img" src="main.jpg" alt="diary" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">🌸</span>
+            </div>
+            <div class="diary-excerpt">it's been raining all day and i've been cozy inside with tea and my drawing tablet. i finished a small sketch, listened to a lot of eurobeat...</div>
+            <a href="#" class="aero-btn btn-blue">read more ▶</a>
+          </div>
+        </div>
+
+        <div class="glass post">
+          <div class="glass-header">
+            <div class="gh-icon aqua"></div>
+            <span class="gh-title">🌸 Diary Entry</span>
+            <span class="gh-count">June 3, 2025</span>
+          </div>
+          <div class="diary-post">
+            <div class="diary-date"><span class="post-date">2025.06.03</span><span class="post-tag pt-life">🌸 DIARY</span></div>
+            <div class="diary-title"><a href="#">things i want to do this summer ☀️</a></div>
+            <div class="diary-thumb dt-aqua">
+              <img class="icon-img" src="frutiger2.jpg" alt="diary" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+              <span class="icon-fallback">☀️</span>
+            </div> 
+            <div class="diary-excerpt">made a little list of things i want to accomplish before september. finish 5 illustrations, beat .hack//, rewatch sailor moon...</div>
+            <a href="#" class="aero-btn btn-aqua">read more ▶</a>
+          </div>
+        </div>
+
+      </div>
+
+      <!-- ══ TAB: MUSIC ══ -->
+      <div class="tab-pane" id="tab-music">
+        <div class="glass">
+          <div class="glass-header"><div class="gh-icon blue"></div><span class="gh-title">🎵 music i love</span></div>
+          <div class="post-inner">
+            <div class="about-text">a little collection of songs and albums that mean something to me ♪</div>
+            <ul class="about-facts">
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#a8e8f8,#38b8d8)"></div>🎵 Butterfly — Smile.dk</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#a0f060,#38a810)"></div>🎵 frutiger aero — amirthetrash</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#ffc8e8,#e068b8)"></div>🎵 Caramelldansen — Caramell</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#90d8ff,#2890e0)"></div>🎵 Deja Vu — Dave Rodgers</li>
+              <li><div class="af-dot" style="background:radial-gradient(circle at 35% 30%,#ffe090,#d8b020)"></div>🎵 Ready Steady Go — L'Arc~en~Ciel</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+
+      <!-- ══ TAB: LINKS ══ -->
+      <div class="tab-pane" id="tab-links">
+        <div class="glass">
+          <div class="glass-header"><div class="gh-icon aqua"></div><span class="gh-title">🔗 find me everywhere</span></div>
+          <div class="post-inner" style="display:flex;flex-direction:column;gap:7px;">
+            <!-- ★ Change href and icon src for each row -->
+            <a href="#" class="links-row">
+              <div class="msn-icon i-sky" style="width:26px;height:26px;flex-shrink:0;">
+                <img class="icon-img" src="https://bsky.app/static/apple-touch-icon.png" alt="bsky" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🦋</span>
+              </div>
+              <div style="flex:1;"><div class="lk-name">Bluesky</div><div class="lk-sub">@yourhandle.bsky.social</div></div>
+              <span class="lk-arrow">▶</span>
+            </a>
+            <a href="#" class="links-row">
+              <div class="msn-icon i-pink" style="width:26px;height:26px;flex-shrink:0;">
+                <img class="icon-img" src="https://cdn-icons-png.flaticon.com/128/1384/1384063.png" alt="ig" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">📸</span>
+              </div>
+              <div style="flex:1;"><div class="lk-name">Instagram</div><div class="lk-sub">art & behind the scenes</div></div>
+              <span class="lk-arrow">▶</span>
+            </a>
+            <a href="#" class="links-row">
+              <div class="msn-icon i-green" style="width:26px;height:26px;flex-shrink:0;">
+                <img class="icon-img" src="https://storage.ko-fi.com/cdn/cup-border.png" alt="kofi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">☕</span>
+              </div>
+              <div style="flex:1;"><div class="lk-name">Ko-fi</div><div class="lk-sub">support my work!</div></div>
+              <span class="lk-arrow">▶</span>
+            </a>
+          </div>
+        </div>
+      </div>
+
+    </div><!-- end main-col -->
+
+    <!-- ====== SIDEBAR ====== -->
+    <div class="sidebar">
+
+      <div class="glass sb-profile">
+        <div class="glass-header"><div class="gh-icon aqua"></div><span class="gh-title">✦ about me</span></div>
+        <div class="post-inner">
+          <!-- ★ Change src to your avatar -->
+          <div class="sb-avatar">
+            <img class="icon-img" src="icon.jpg" alt="avatar" onerror="this.style.display='none';this.nextElementSibling.style.display='block'">
+            <span class="icon-fallback">🌿</span>
+          </div>
+          <div class="sb-name">Your Name</div><!-- ★ change -->
+          <div class="sb-sub">she/her · artist · digital dreamer</div><!-- ★ change -->
+          <div class="sb-status"><div class="sb-status-dot"></div>online ♡</div>
+          <!-- ★ Change href and src for each social icon -->
+          <div class="msn-icons">
+            <a href="#" class="msn-icon i-sky"><img class="icon-img" src="https://bsky.app/static/apple-touch-icon.png" alt="bsky" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">🦋</span></a>
+            <a href="#" class="msn-icon i-pink"><img class="icon-img" src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/95/Instagram_logo_2022.svg/32px-Instagram_logo_2022.svg.png" alt="ig" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">📸</span></a>
+            <a href="#" class="msn-icon i-aqua"><img class="icon-img" src="https://i.imgur.com/your-mail.png" alt="mail" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">✉️</span></a>
+            <a href="#" class="msn-icon i-green"><img class="icon-img" src="https://storage.ko-fi.com/cdn/cup-border.png" alt="kofi" onerror="this.style.display='none';this.nextElementSibling.style.display='block'"><span class="icon-fallback">☕</span></a>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon blue"></div><span class="gh-title">a little bit~</span></div>
+        <div class="about-block">
+          <p>hi!! i make digital art and write about things i love. obsessed with aqua aesthetics, early 2000s internet, and anything that glows 💙</p><!-- ★ change -->
+          <ul class="about-list">
+            <li><div class="al-dot" style="background:radial-gradient(circle at 35% 30%,#90d8ff,#2890e0)"></div>playing: .hack// g.u.</li>
+            <li><div class="al-dot" style="background:radial-gradient(circle at 35% 30%,#90f0e0,#28b098)"></div>reading: Vampire Knight</li>
+            <li><div class="al-dot" style="background:radial-gradient(circle at 35% 30%,#a0f060,#38a810)"></div>mood: ☁️ glowy & soft</li>
+            <li><div class="al-dot" style="background:radial-gradient(circle at 35% 30%,#ffc8e8,#e068b8)"></div>listening: eurobeat ♪</li>
+          </ul>
+        </div>
+      </div>
+
+      <!-- ★ Music player — change SC URL and track name -->
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon blue"></div><span class="gh-title">🎵 now playing</span></div>
+        <div class="post-inner" style="padding:10px 12px;">
+          <iframe id="sc-player-fa"
+            src="https://w.soundcloud.com/player/?url=https%3A//soundcloud.com/ekaterina-chernova-330213868/amirthetrash-frutiger-aero&auto_play=true&hide_related=true&show_comments=false&show_user=false&visual=false"
+            width="1" height="1" style="position:absolute;opacity:0;pointer-events:none;" allow="autoplay"></iframe>
+          <div class="mp-track" id="mp-track-fa">♪ frutiger aero — amirthetrash</div><!-- ★ change -->
+          <div class="mp-controls">
+            <div class="mp-disc" id="mp-disc-fa"></div>
+            <div class="mp-btn"  id="mp-btn-fa">▶</div>
+            <div class="mp-bars" id="mp-bars-fa">
+              <div class="mp-bar"></div><div class="mp-bar"></div>
+              <div class="mp-bar"></div><div class="mp-bar"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon green"></div><span class="gh-title">categories</span></div>
+        <div class="cat-body">
+          <a href="#" class="cat-row"><div class="cat-orb co-sky"></div><span class="cat-name">✿ Art</span><span class="cat-num">18</span></a>
+          <a href="#" class="cat-row"><div class="cat-orb co-green"></div><span class="cat-name">🎮 Gaming</span><span class="cat-num">12</span></a>
+          <a href="#" class="cat-row"><div class="cat-orb co-aqua"></div><span class="cat-name">🌸 Diary</span><span class="cat-num">9</span></a>
+          <a href="#" class="cat-row"><div class="cat-orb co-teal"></div><span class="cat-name">🎵 Music</span><span class="cat-num">5</span></a>
+        </div>
+      </div>
+
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon aqua"></div><span class="gh-title">recent posts</span></div>
+        <div class="recent-body">
+          <a href="#" class="recent-row"><div class="recent-orb"></div><div class="recent-info"><span class="recent-title">luna starlight OC reveal!</span><span class="recent-date">Jun 14</span></div></a>
+          <a href="#" class="recent-row"><div class="recent-orb"></div><div class="recent-info"><span class="recent-title">.hack// g.u. first impressions</span><span class="recent-date">Jun 10</span></div></a>
+          <a href="#" class="recent-row"><div class="recent-orb"></div><div class="recent-info"><span class="recent-title">june goals & summer playlist</span><span class="recent-date">Jun 5</span></div></a>
+          <a href="#" class="recent-row"><div class="recent-orb"></div><div class="recent-info"><span class="recent-title">fav eurobeat tracks 2025</span><span class="recent-date">May 30</span></div></a>
+        </div>
+      </div>
+
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon pink"></div><span class="gh-title">👁 visitors</span></div>
+        <div class="counter-body">
+          <div class="counter-digits">001 337</div>
+          <div class="counter-sub">you are visitor #001337! ♡</div>
+        </div>
+      </div>
+
+      <div class="glass">
+        <div class="glass-header"><div class="gh-icon blue"></div><span class="gh-title">tags</span></div>
+        <div class="tags-body">
+          <a href="#" class="tag-pill">#frutiger-aero</a>
+          <a href="#" class="tag-pill">#y2k</a>
+          <a href="#" class="tag-pill">#pixelart</a>
+          <a href="#" class="tag-pill">#gaming</a>
+          <a href="#" class="tag-pill">#oc</a>
+          <a href="#" class="tag-pill">#aqua</a>
+          <a href="#" class="tag-pill">#anime</a>
+          <a href="#" class="tag-pill">#retro</a>
+          <a href="#" class="tag-pill">#eurobeat</a>
+        </div>
+      </div>
+
+    </div><!-- end sidebar -->
+  </div><!-- end body-wrap -->
+
+  <footer>
+    <div class="footer-copy">© AQUABLOG · all rights reserved ✦</div><!-- ★ change -->
+    <div class="footer-icons">
+      <div class="footer-orb fo-blue">🌐</div>
+      <div class="footer-orb fo-aqua">💧</div>
+      <div class="footer-orb fo-green">🌿</div>
+    </div>
+    <div class="footer-made">made with ♡ by <a href="https://vgen.co/grevaleart" target="_blank">Grecia V.</a></div><!-- ★ change -->
+  </footer>
+
+</div><!-- end .site -->
+
+<!-- SoundCloud API + your scripts -->
+<script src="https://w.soundcloud.com/player/api.js"></script>
+<script src="frutiger-blog-script.js"></script>
+
+<!-- Lightbox -->
+<div class="lightbox-overlay" id="lightbox" onclick="closeLightbox(event)">
+  <span class="lightbox-close" onclick="document.getElementById('lightbox').classList.remove('open')">✕</span>
+  <img class="lightbox-img" id="lightbox-img" src="" alt="full size">
+</div>
+</body>
+</html>
